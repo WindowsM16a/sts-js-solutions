@@ -13,4 +13,4 @@ const boilingPoint = 100;
 const PI = 3.14;
 
 // declaring variables on one line with one keyword
-let name = 'Shayne Wuver', job = 'Student', live = 'Ghana';
+let name = 'Shayne Wuver', job = 'Student', live = 'Ghana'; 
