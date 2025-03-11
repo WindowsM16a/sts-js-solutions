@@ -42,4 +42,4 @@ console.log(`${year}-${month}-${day} ${hour}:${minutes}`)
 
 console.log(`${day}-${month}-${year} ${hour}:${minutes}`)
 
-console.log(`${day}/${month}/${year} ${hour}:${minutes}`)
+console.log(`${day}-${month}-${year} ${hour}:${minutes}`)
