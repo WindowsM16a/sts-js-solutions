@@ -80,13 +80,17 @@
 
 // q9
 // divided by 1 and itself only
-// 2,3,5,7
-// for (let i = 0; i <= 100; i++) {
-// 	if (i % 1 == i && i % i == 1) {
-// 		console.log(i);
-// 	}
-// }
-
+const primeArr = [];
+for (let i = 0; i <= 100; i++) {
+	if (i == 1 || i < 1) {
+		console.log(`${i} is not a prime number`);
+	} else if (i == 2 || i == 3) {
+		primeArr.push(i);
+	} else if (i % 2 == 0 || i % 3 == 0) {
+		console.log(`${i} is not a prime number`);
+	} else primeArr.push(i);
+}
+console.log(primeArr.toString());
 // q10
 // let sum = 0;
 // for (let i = 0; i <= 100; i++) {
@@ -145,13 +149,12 @@
 // console.log(arr);
 
 // q15
-const characters = "abcdefghijklmnopqrst";
-// 20chars
-const charArr = characters.split("");
-const randomArr = [];
-let newChar;
-for (i = 0; i < 5; i++) {
-	newChar = Math.floor(Math.random() * charArr.length);
-	randomArr.push(charArr[newChar]);
-}
-console.log(randomArr.toString());
+// const characters = "abcdefghijklmnopqrstuvwxyz";
+// const charArr = characters.split("");
+// const randomArr = [];
+// let newChar;
+// for (i = 0; i < 5; i++) {
+// 	newChar = Math.floor(Math.random() * charArr.length);
+// 	randomArr.push(charArr[newChar]);
+// }
+// console.log(randomArr.toString());
