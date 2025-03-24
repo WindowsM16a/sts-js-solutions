@@ -39,7 +39,6 @@
 // console.log(countriesUppercase);
 
 // q5
-// note: need to add a new country for 5, 6, 7; iceland
 // const countryLengths = [];
 // for (i = 0; i < countries.length; i++) {
 // 	countryLengths.push(countries[i].length);
@@ -47,9 +46,11 @@
 // console.log(countryLengths);
 
 // q6
-console.log(country[1].split(""));
-let countriesInfo = [];
+// note: need to add a new country for 6, 7; iceland
 
+// console.log(countries[1].split(""));
+let countriesInfo = [];
+countries.splice(9, 0, "Iceland");
 for (let i = 0; i < countries.length; i++) {
 	let country = [];
 	country.push(countries[i]);
@@ -61,11 +62,101 @@ for (let i = 0; i < countries.length; i++) {
 console.log(countriesInfo);
 
 // q7
-
+let landArr = [];
 for (let i = 0; i < countries.length; i++) {
 	let country = [];
 	country.push(countries[i]);
 	if (country[0].includes("land")) {
-		console.log(country);
-	} else console.log("All these countries are without land");
+		landArr.push(country[0]);
+	}
+}
+console.log(landArr);
+
+// q8
+let iaArr = [];
+for (let i = 0; i < countries.length; i++) {
+	let country = [];
+	country.push(countries[i]);
+	if (country[0].endsWith("ia")) {
+		iaArr.push(country[0]);
+	}
+}
+console.log(iaArr);
+
+// q9
+let maxLengthCountry = countries[0];
+
+for (let i = 0; i < countries.length; i++) {
+	if (countries[i].length > maxLengthCountry.length) {
+		maxLengthCountry = countries[i];
+	}
+}
+console.log(`The country with the most characters is ${maxLengthCountry}`);
+
+// q10
+let fiveCharArr = [];
+for (let i = 0; i < countries.length; i++) {
+	let country = [];
+	country.push(countries[i]);
+	if (countries[i].length == 5) {
+		fiveCharArr.push(countries[i]);
+	}
+}
+console.log(fiveCharArr);
+
+// q11
+let maxLengthTech = webTechs[0];
+for (let i = 0; i < webTechs.length; i++) {
+	if (webTechs[i].length > maxLengthTech.length) {
+		maxLengthTech = webTechs[i];
+	}
+}
+console.log(`The longest word in the webTechs array is ${maxLengthTech}`);
+
+// q12
+let allTechsArr = [];
+for (let i = 0; i < webTechs.length; i++) {
+	let techArr = [];
+	techArr.push(webTechs[i], webTechs[i].length);
+	allTechsArr.push(techArr);
+}
+console.log(allTechsArr);
+
+// q13
+const mernStack = ["MongoDB", "Express", "React", "Node"];
+let acronym = "";
+for (let i = 0; i < mernStack.length; i++) {
+	acronym += mernStack[i].slice(0, 1);
+}
+console.log(acronym);
+
+// q14
+const forArr = [
+	"HTML",
+	"CSS",
+	"JS",
+	"React",
+	"Redux",
+	"Node",
+	"Express",
+	"MongoDB",
+];
+for (let i = 0; i < forArr.length; i++) {
+	console.log(forArr[i]);
+}
+
+// q15
+const fruitsArr = ["banana", "orange", "mango", "lemon"];
+for (let i = fruitsArr.length - 1; i >= 0; i--) {
+	console.log(fruitsArr[i]);
+}
+
+// q16
+let fullStack = [
+	["HTML", "CSS", "JS", "React"],
+	["Node", "Express", "MongoDB"],
+];
+fullStack = fullStack[0].concat(fullStack[1]);
+for (i = 0; i < fullStack.length; i++) {
+	console.log(fullStack[i]);
 }
