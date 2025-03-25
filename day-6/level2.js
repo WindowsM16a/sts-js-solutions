@@ -73,14 +73,16 @@ console.log(landArr);
 
 // q8
 let iaArr = [];
+let noIaArr = [];
 for (let i = 0; i < countries.length; i++) {
-	let country = [];
-	country.push(countries[i]);
-	if (country[0].endsWith("ia")) {
-		iaArr.push(country[0]);
+	if (countries[i].endsWith("ia")) {
+		iaArr.push(countries[i]);
+	} else if (countries[i].endsWith("ia") == false) {
+		noIaArr.push(countries[i]);
 	}
 }
-console.log(iaArr);
+console.log("not ending with ia", noIaArr);
+console.log("ending with ia", iaArr);
 
 // q9
 let maxLengthCountry = countries[0];
