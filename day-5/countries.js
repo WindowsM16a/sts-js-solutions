@@ -9,5 +9,5 @@ const countries = [
 	"Hungary",
 	"Ireland",
 	"Japan",
-	"kenya",
+	"Kenya",
 ];

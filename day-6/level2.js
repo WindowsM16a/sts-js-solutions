@@ -46,7 +46,6 @@
 // console.log(countryLengths);
 
 // q6
-// note: need to add a new country for 6, 7; iceland
 
 // console.log(countries[1].split(""));
 let countriesInfo = [];
