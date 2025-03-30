@@ -83,18 +83,64 @@ const pi = 3.14;
 // console.log(convertCelsiusToFahrenheit(100));
 
 // q13
-function calcBMI(weight, height) {
-	const bmi = weight / (height * height);
-	let bmiVerdict = "";
-	if (bmi <= 18.5) {
-		bmiVerdict = "Underweight";
-	} else if (bmi <= 24.9) {
-		bmiVerdict = "Normal Weight";
-	} else if (bmi <= 29.9) {
-		bmiVerdict = "Overweight";
-	} else if (bmi >= 30) {
-		bmiVerdict = "Obese";
-	}
-	return `${bmiVerdict}: BMI is ${bmi}`;
-}
-console.log(calcBMI(110, 1.9));
+// function calcBMI(weight, height) {
+// 	const bmi = weight / (height * height);
+// 	let bmiVerdict = "";
+// 	if (bmi <= 18.5) {
+// 		bmiVerdict = "Underweight";
+// 	} else if (bmi <= 24.9) {
+// 		bmiVerdict = "Normal Weight";
+// 	} else if (bmi <= 29.9) {
+// 		bmiVerdict = "Overweight";
+// 	} else if (bmi >= 30) {
+// 		bmiVerdict = "Obese";
+// 	}
+// 	return `${bmiVerdict}: BMI is ${bmi}`;
+// }
+// console.log(calcBMI(110, 1.9));
+
+// q14
+// const months = [
+// 	"january",
+// 	"february",
+// 	"march",
+// 	"april",
+// 	"may",
+// 	"june",
+// 	"july",
+// 	"august",
+// 	"september",
+// 	"october",
+// 	"november",
+// 	"december",
+// ];
+
+// const autumn = ["september", "october", "november"],
+// 	winter = ["december", "january", "february"],
+// 	spring = ["march", "april", "may"],
+// 	summer = ["june", "july", "august"];
+
+// let season;
+// function checkSeason(month) {
+// 	if (autumn.includes(month)) {
+// 		season = "autumn";
+// 	} else if (winter.includes(month)) {
+// 		season = "winter";
+// 	} else if (spring.includes(month)) {
+// 		season = "spring";
+// 	} else if (summer.includes(month)) {
+// 		season = "summer";
+// 	} else console.log("check your input");
+// 	return season;
+// }
+
+// console.log(checkSeason(months[5]));
+
+// q15
+// function findMax(num1, num2, num3) {
+// 	const nums = [num1, num2, num3];
+// 	nums.sort((a, b) => b - a);
+// 	return nums[0];
+// }
+// console.log(findMax(0, 10, 5));
+// console.log(findMax(0, -10, -2));
