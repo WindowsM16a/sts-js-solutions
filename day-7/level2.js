@@ -195,24 +195,24 @@
 // console.log(randomMacAddress());
 
 // q17
-let nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-let letters = ["a", "A", "b", "B", "c", "C", "d", "D", "e", "E", "f", "F"];
-let hexPool = nums.concat(letters);
-let hexVals = "";
-function randomHexNumberGenerator() {
-	for (i = 0; i < 6; i++) {
-		hexVals += hexPool[Math.trunc(Math.random() * hexPool.length)];
-	}
-	return `#${hexVals}`;
-}
-console.log(randomHexNumberGenerator());
+// let nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let letters = ["a", "A", "b", "B", "c", "C", "d", "D", "e", "E", "f", "F"];
+// let hexPool = nums.concat(letters);
+// let hexVals = "";
+// function randomHexNumberGenerator() {
+// 	for (i = 0; i < 6; i++) {
+// 		hexVals += hexPool[Math.trunc(Math.random() * hexPool.length)];
+// 	}
+// 	return `#${hexVals}`;
+// }
+// console.log(randomHexNumberGenerator());
 
-// q18
-function userIdGenerator() {
-	let userId = "";
-	for (let i = 0; i < 7; i++) {
-		userId += hexPool[Math.trunc(Math.random() * hexPool.length)];
-	}
-	return userId;
-}
-console.log(userIdGenerator());
+// // q18
+// function userIdGenerator() {
+// 	let userId = "";
+// 	for (let i = 0; i < 7; i++) {
+// 		userId += hexPool[Math.trunc(Math.random() * hexPool.length)];
+// 	}
+// 	return userId;
+// }
+// console.log(userIdGenerator());
